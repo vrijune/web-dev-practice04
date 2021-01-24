@@ -18,6 +18,20 @@
 
         <%--TODO: Your code here--%>
 
+        <c:forEach var="biograph" items="${biographies}">
+            <div class="card">
+                <img class="card-header card-img" src="./assets/images/${biograph.imageFilename}">
+                <div class="card-body">
+                    <h2>${biograph.firstName}</h2>
+                    <p>${biograph.content}</p>
+
+                </div>
+            </div>
+
+
+        </c:forEach>
+
+
     </div>
 
 </div>
